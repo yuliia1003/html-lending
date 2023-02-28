@@ -1,0 +1,132 @@
+.main {
+  background: var(--background-color);
+}
+
+.booking__form {
+  background: var(--text-color);
+  width: 1240px;
+  height: 277.65px;
+  border-radius: 30px;
+  padding: 20px 44px;
+  color: var(--text-color-dark);
+}
+
+.booking__form-options {
+  border: none;
+  display: flex;
+  gap: 50px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid var(--text-color-form);
+  height: 30px;
+}
+
+.booking__form-item {
+  color: var(--text-color-form);
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.booking__form-item:hover {
+  border-bottom: 2px solid var(--background-color-button);
+  color: var(--background-color-button);
+}
+
+.booking__form-travel-type {
+  display: flex;
+  justify-content: space-between;
+}
+
+.booking__form-ticket-type {
+  /*margin-top: 30px;*/
+  border: none;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  gap: 76px;
+}
+
+.booking__form-ticket-type-way:hover {
+  font-weight: 800;
+}
+
+.booking__form-number-of-traveller {
+  border: none;
+  color: var(--background-color-button);
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.booking__form-cabin-class {
+  border: none;
+  color: var(--background-color-button);
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+}
+
+.booking__form-way-select {
+  margin-top: 18px;
+}
+
+.booking__form-way-select {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.booking__form-way-from {
+  padding-left: 65px;
+  background-image: url("../img/plane_from.svg");
+  background-position: 5px center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  width: 363.85px;
+  height: 48.29px;
+  border: 0.5px solid #000000;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.booking__form-way-to {
+  padding-left: 65px;
+  background-image: url("../img/plane_to.svg");
+  background-position: 5px center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  width: 363.85px;
+  height: 48.29px;
+  border: 0.5px solid #000000;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.date {
+  appearance: none;
+  -webkit-appearance: none;
+  padding: 8px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  width: 174.65px;
+  height: 48.29px;
+}
+
+.date::-webkit-calendar-picker-indicator {
+  background: url(../img/calendar-icon.svg) no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.booking__form-button-search {
+	width: 232.86px;
+	height: 60.36px;
+	margin:18px auto 0 auto;
+	display: block;
+}
+
+.booking__form-button-search:hover {
+	border: 2px solid var(--background-color-button);
+}

@@ -1,197 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
- 
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instagram Tour Website</title>
-    <link rel="shortcut icon" href="img/icon_instatrip.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Expedia</title>
 </head>
 
 <body>
     <header class="header">
-        <div class="header__contacts">
-            <p class="header__phonenumber">+1 (234) 567 89 00</p>
-            <select name="language_selector">
-                <option value="EN ">EN</option>
-                <option value="FR">FR</option>
-                <option value="ES">ES</option>
-            </select>
+        <div class="container header__container">
+            <nav class="header__nav">
+                <div class="header__nav-conteiner">
+                    <a class="header__nav-conteiner-logo" href="index.html">
+                        <img class="header__nav-logo-svg" src="img/expedia_logo.svg" alt="Expedia Logo">
+                    </a>
+                </div>
 
-        </div>
+                <div class="header__nav-wrapper">
+                    <a class="header__nav-menu-item" href="#">Home</a>
+                    <a class="header__nav-menu-item" href="#">Trips</a>
+                    <a class="header__nav-menu-item" href="#">About</a>
+                    <a class="header__nav-menu-item" href="#">Support</a>
+                    <a class="header__nav-menu-item" href="#">Travel</a>
+                </div>
 
-        <nav class="header__nav">
-            <a class="header__logo" href="#">
-                <img src="img/logo-header.svg" alt="Instagram Trip Logo">
-            </a>
+                <div class="header__nav-sing">
+                    <button class="header__nav-button button">Sign Up</button>
+                </div>
+            </nav>
 
-            <div class="header__menu">
-                <a class="header__menu-item" href="#">About us</a>
-                <a class="header__menu-item" href="#">Tours</a>
-                <a class="header__menu-item" href="#">Testimonials</a>
-                <a class="header__menu-item" href="#">Contacts</a>
+            <div class="header__box">
+                <h1 class="header__title">It Matters Who You Travel With</h1>
+
+                <p class="header__subtitle">We want you to feel confident in the travel experience you will have with
+                    us.</p>
             </div>
-        </nav>
-
-        <div class="header__titel">
-            <h1 class="header__titel-tagline">
-                See the Beauty of the Whole World<span class="red_color">.</span>
-            </h1>
-            <a class="header__titel-button" href="#"> <img width="32" class="header__titel-button-arrow"
-                    src="img/arrow_title_button.svg" alt="Learn About Our Tours">Learn About Our Tours</a>
         </div>
     </header>
 
-    <main>
-        <section class="trips">
-            <p class="trips__tagline">
-                Only the Most Beautiful Places<span class="red_color">.</span>
-            </p>
-            <h2 class="trips__title">- popular trips</h2>
-            <p class="trips__information">
-                The world is so big and is waiting for you to see it! During our tours, you will visit the most
-                beautiful places and will be able to take photos and videos that will blow your Instagram! Each of our
-                tours is carefully designed. In addition, a professional photographer travels with each group.
-            </p>
+    <main class="main">
+        <div class="container main__conteiner">
+            <div class="booking">
+                <form class="booking__form" action="https://example.com/order-tickets.php" method="POST"
+                    enctype="multipart/form-data" name="ticket-order-form" autocomplete="off" novalidate>
+                    <fieldset class="booking__form-options">
+                        <a class="booking__form-item" href="#">Stays</a>
+                        <a class="booking__form-item" href="#">Flight</a>
+                        <a class="booking__form-item" href="#">Cars</a>
+                        <a class="booking__form-item" href="#">Packages</a>
+                        <a class="booking__form-item" href="#">Things to do</a>
+                    </fieldset>
 
-            <div class="trips__carusel">
-                <div class="trips__carusel-item">
-                    <a href="#">
-                        <img class="trips__carusel-item-img" src="img/Europe_carusel.jpg" alt="Freedom-loving Europe">
-                        <h3 class="trips__carusel-item-name">Freedom-loving Europe</h3>
-                    </a>
-                    <p class="trips__carusel-item-price">from <span class="red_color">$350</span></p>
-                </div>
+                    <div class="booking__form-travel-type">
+                        <fieldset class="booking__form-ticket-type">
+                            <div class="booking__form-ticket-type-way">
+                                <input type="radio" id="ticket-one-way" name="ticket-type" value="one-way">
+                                <label for="ticket-one-way">One-way</label>
+                            </div>
 
-                <div class="trips__carusel-item">
-                    <a href="#">
-                        <img class="trips__carusel-item-img" src="img/Venice_carusel.jpg" alt="Fabulous Venice">
-                        <h3 class="trips__carusel-item-name">Fabulous Venice</h3>
-                    </a>
-                    <p class="trips__carusel-item-price">from <span class="red_color">$220</span></p>
-                </div>
+                            <div class="booking__form-ticket-type-way">
+                                <input type="radio" id="ticket-return" name="ticket-type" value="return">
+                                <label for="ticket-return">Return</label>
+                            </div>
 
-                <div class="trips__carusel-item">
-                    <a href="#">
-                        <img class="trips__carusel-item-img" src="img/Australia_carusel.jpg" alt="Australian Week">
-                        <h3 class="trips__carusel-item-name">Australian Week</h3>
-                    </a>
-                    <p class="trips__carusel-item-price">from <span class="red_color">$850</span></p>
-                </div>
+                            <div class="booking__form-ticket-type-way">
+                                <input type="radio" id="ticket-multi-city" name="ticket-type" value="multi-city">
+                                <label for="ticket-multi-city">Multi-city</label>
+                            </div>
+                        </fieldset>
+                        <div class="booking__form-traveler-options">
+                            <select class="booking__form-number-of-traveller" name="number-of-traveller">
+                                <option value="1">1 traveller</option>
+                                <option value="2" selected>2 traveller</option>
+                                <option value="3">3 traveller</option>
+                                <option value="4">4 traveller</option>
+                                <option value="5">5 traveller</option>
+                                <option value="6">6 traveller</option>
+                            </select>
 
-                <div class="trips__carusel-item">
-                    <a href="#">
-                        <img class="trips__carusel-item-img" src="img/Japanese_carusel.jpg" alt="Japanese Secrets">
-                        <h3 class="trips__carusel-item-name">Japanese Secrets</h3>
-                    </a>
-                    <p class="trips__carusel-item-price">from <span class="red_color">$780</span></p>
-                </div>
+                            <select class="booking__form-cabin-class" name="cabin-class">
+                                <option value="economy">Economy</option>
+                                <option value="premium-economy">Premium Economy</option>
+                                <option value="business-class">Business Class</option>
+                                <option value="first-class">First Class</option>
+                            </select>
+                        </div>
+                    </div>
 
-                <div class="trips__carusel-item">
-                    <a href="#">
-                        <img class="trips__carusel-item-img" src="img/Disneyland_carusel.jpg"
-                            alt="Fairytale in Disneyland">
-                        <h3 class="trips__carusel-item-name">Fairytale in Disneyland</h3>
-                    </a>
-                    <p class="trips__carusel-item-price">from <span class="red_color">$450</span></p>
-                </div>
+                    <div class="booking__form-way-select">
+                        <input type="text" class="booking__form-way-from" id="city-from" name="city-from"
+                            placeholder="form">
+                        <div class="booking__form-way-charge-btn">
+                            <img src="img/change-btn.svg" alt="charge button">
+                        </div>
+                        <input type="text" class="booking__form-way-to" id="city-to" name="city-to" placeholder="to">
+                        <input type="date" name="date" class="booking__form-way-departing-date date">
+                        <input type="date" name="date" class="booking__form-way-returning-date date">
+                    </div>
+                    <div class="booking__form-button">
+                        <button class="booking__form-button-search button">Search</button>
+                    </div>
+                </form>
 
             </div>
-        </section>
 
-        <section class="about">
-            <p class="about__tagline">
-                The Best <span class="red_color">Instagrammable</span> Places and Guided Tours.
-            </p>
-            <h2 class="about__title">- about us</h2>
-
-            <p class="about__text">There are thousands of stunning places in the world, and you can visit all of them!
-                Many of them have already turned into real places of pilgrimage for fans of striking Instagram photos.
-                Don't miss your chance to visit a cool place and have amazing photos on your Instagram!</p>
-
-            <p class="about__text">Our company offers tours to the most picturesque places on our planet. Visit the
-                coolest countries, take hundreds or even thousands of photos for your Instagram! We will be happy to
-                help you with this.</p>
-
-            <div class="about__advantages">
-
-                <div class="about__advantage-item">
-                    <div class="about__advantage-item-img">
-                        <img src="img/icon_tours.svg" alt="50+ tours">
-                    </div>
-                    <h3 class="about__advantage-item-title">50+ tours</h3>
-                    <p class="about__advantage-item-text">Our company regularly organizes tours. You can see landmarks
-                        all over the world. Just choose the countries you like the most.</p>
-                </div>
-
-                <div class="about__advantage-item">
-                    <div class="about__advantage-item-img">
-                        <img src="img/icon_guide.svg" alt="Experienced guides">
-                    </div>
-                    <h3 class="about__advantage-item-title">Experienced guides</h3>
-                    <p class="about__advantage-item-text">The specialists of our company will organize an unforgettable
-                        trip and tell you a lot of interesting things!</p>
-                </div>
-            </div>
-
-            <div class="about__illustration">
-                <img src="img/about-us-pic.jpg" alt="illustration"">
-           </div>
-  
-        </section>
-  
-        <section class=" booking">
-                <p class="booking__tagline">
-                    We Will Organize Your Best Travel, Trust Us.
-                </p>
-                <h3 class="booking__title">- steps to book</h3>
-
-                <p class="booking__text">By contacting our company, you will get the most out of your trip. Our company
-                    has vast experience in organizing group trips. We provide a full package of services for tourists,
-                    the list includes:</p>
-
-                <ul>
-                    <li>Professional photographers;</li>
-                    <li>Transfers;</li>
-                    <li>Staying in beautiful 4* hotels.</li>
-                    <li>Intersting excursions.</li>
-                </ul>
-
-                <p class="booking__text">
-                    You can familiarize yourself with the detailed program of each tour by contacting us. We will send
-                    you all the details.
-                </p>
-
-                <h3 class="booking__step">1. Contact us</h3>
-
-                <p class="booking__text"> To do this, you can fill out a form on our website or contact us directly by
-                    e-mail or phone.</p>
-
-                <h3 class="booking__step">2. Select a tour</h3>
-
-                <p class="booking__text">Yes, we know, the selection of our instagrammable tours make you dizzy. Our
-                    managers will be happy to assist you in your decision. Just tell them what you expect from the tour!
-                </p>
-
-                <h3 class="booking__step">3. Enjoy your journey</h3>
-
-                <p class="booking__text">We will do our best to make your tour as interesting, bright and eventful as
-                    possible! We will show you the most beautiful places, you will meet nice people and boost your
-                    Instagram, of course!</p>
-
-                <p class="booking__text">Remember that each tour is accompanied by professional photographers, so you
-                    don't need to worry about the content!</p>
-
-        </section>
+        </div>
 
     </main>
 
-    <footer>
-
-
-    </footer>
 </body>
 
 </html>
